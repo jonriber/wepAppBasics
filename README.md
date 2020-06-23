@@ -1,0 +1,2 @@
+# wepAppBasics
+ Applying some technologies 
