@@ -6,6 +6,6 @@ const AboutPage = () => (
         <p>For now, it´s just this.</p>
     </React.Fragment>
 
-)
+);
 
 export default AboutPage;
