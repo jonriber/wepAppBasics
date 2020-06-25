@@ -1,0 +1,22 @@
+{
+  "name": "desterro-web-app-backend",
+  "version": "1.0.0",
+  "description": "Back-End App",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Back-End"
+  ],
+  "author": "Jonatas Ribeiro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/node": "^7.10.3",
+    "@babel/preset-env": "^7.10.3"
+  }
+}

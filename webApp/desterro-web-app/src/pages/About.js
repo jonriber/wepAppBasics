@@ -1,9 +1,13 @@
 import React from 'react';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 const AboutPage = () => (
     <React.Fragment>
-        <h1>This is my about Page!</h1>
-        <p>For now, it´s just this.</p>
+        <Jumbotron>
+            <h1>This is my about Page!</h1>
+            <p>For now, it´s just this.</p>
+        </Jumbotron>
+        
     </React.Fragment>
 
 );

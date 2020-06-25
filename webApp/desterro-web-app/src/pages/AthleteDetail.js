@@ -1,6 +1,7 @@
 import React from 'react';
 import athleteInformation from './athlete-information';
 import NotFoundPage from './NotFoundPage';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 const AthleteDetailPage = ({match}) => {
     const name = match.params.name;
@@ -9,10 +10,12 @@ const AthleteDetailPage = ({match}) => {
     
     return (
     <React.Fragment>
-        <h1>Athlete Detail Page</h1>
-        <p>This is {athlete.name}</p>
-    <p>He is {athlete.age} years old</p>
-    <h3>Plays in {athlete.club}</h3>
+        <Jumbotron>
+            <h1>Athlete Detail Page</h1>
+            <p>This is {athlete.name}</p>
+            <p>He is {athlete.age} years old</p>
+            <h3>Plays in {athlete.club}</h3>
+        </Jumbotron>
     </React.Fragment>
     );
 };

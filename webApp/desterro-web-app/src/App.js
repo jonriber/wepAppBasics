@@ -1,3 +1,6 @@
+//importing Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import React from 'react';
 import {
   BrowserRouter as 
@@ -17,8 +20,7 @@ import NavBar from './NavBar';
 //import Css
 import './App.css';
 
-//importing Bootstrap
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   

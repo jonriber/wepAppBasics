@@ -1,40 +1,43 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 // import './NavBar.css';
-import Navbar from 'react-bootstrap/Navbar';
+// import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
+//nav using react-bootstrap, similar to html
 
 const NavBar = () => (
-   
-    <nav>
-<ul>
-    <li>
-        <Link to='/'>Home</Link>
-    </li>
-    <li>
-        <Link to='/about'>About </Link>
-    </li>
-    <li>
-        <Link to='/athletes'>Athletes List</Link>
-    </li>
-</ul>
-</nav>
+    <Nav >
+    <Nav.Item>
+      <Nav.Link href="/">Home</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link href="/about">About</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link href="/athletes">Athletes List</Nav.Link>
+    </Nav.Item>
     
+  </Nav>
 
 );
 
 export default NavBar;
 
 
+//Nav using Link from react-router-dom
 
-
-// <NavBar bg='light'>
-//         <Navbar.Brand ><Link to='/'>Home</Link></Navbar.Brand>
-//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//         <Navbar.Collapse id="basic-navbar-nav"></Navbar.Collapse>
-//         <Nav className='mr-auto'>
-//             <Nav.Link ><Link to='/about'>About </Link></Nav.Link>
-//             <Nav.Link ><Link to='/athletes'>Athletes List</Link></Nav.Link>
-//         </Nav>
-//     </NavBar>
+// <nav>
+// <ul>
+//     <li>
+//         <Link to='/'>Home</Link>
+//     </li>
+//     <li>
+//         <Link to='/about'>About </Link>
+//     </li>
+//     <li>
+//         <Link to='/athletes'>Athletes List</Link>
+//     </li>
+// </ul>
+// </nav>
+    
