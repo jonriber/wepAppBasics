@@ -10,27 +10,28 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 650,
+    minWidth: 550,
   },
 });
 
-function createData(name, club, age) {
-  return { name, club, age };
-}
+// function createData(name, club, age) {
+//   return { name, club, age };
+// }
 
-const rows = [
-  createData('Jonatas', 'Desterro', 29),
-  createData('Dani', 'Desterro', 40),
-  createData('Drude', 'Spac', 41),
-  createData('João', 'Band', 22),
-  createData('Alemão', 'Spac', 38),
-  createData('Roger', 'Desterro', 18),
-];
+// const rows = [
+//   createData('Jonatas', 'Desterro', 29),
+//   createData('Dani', 'Desterro', 40),
+//   createData('Drude', 'Spac', 41),
+//   createData('João', 'Band', 22),
+//   createData('Alemão', 'Spac', 38),
+//   createData('Roger', 'Desterro', 18),
+// ];
 
-export default function DataTable() {
+export default function DataTable({data}) {
   const classes = useStyles();
-
+  
   return (
+  <React.Fragment>
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
@@ -41,17 +42,19 @@ export default function DataTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.name}>
+          {data.map((item,index) => (
+            <TableRow key={index}>
               <TableCell component="th" scope="row">
-                {row.name}
+                {item.key}
               </TableCell>
-              <TableCell align="right">{row.club}</TableCell>
-              <TableCell align="right">{row.age}</TableCell>
+              <TableCell align="right">{item.name}</TableCell>
+              <TableCell align="right">{item.age}</TableCell>
+              <TableCell align="right">{item.club}</TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
     </TableContainer>
+    </React.Fragment>
   );
 }
